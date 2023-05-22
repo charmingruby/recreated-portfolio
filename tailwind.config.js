@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: 'var(--font-inter)',
-        alt: 'var(--font-bai-jamjuree)',
+        alt: 'var(--font-baiJamjuree)',
       },
       blur: {
         full: '194px',

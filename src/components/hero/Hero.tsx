@@ -5,7 +5,7 @@ import { Apresentation } from './Apresentation'
 
 export function Hero() {
   return (
-    <div className="flex h-full flex-col justify-center px-8 md:px-32">
+    <div className="mt-24 flex h-full flex-col lg:mt-0 lg:justify-center">
       <SectionTitle content="Hello, my name is" />
       <Apresentation />
       <MainStack />

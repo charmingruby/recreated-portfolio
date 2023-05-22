@@ -3,6 +3,7 @@ import './globals.css'
 import { Bai_Jamjuree, Inter } from 'next/font/google'
 import { ReactNode } from 'react'
 import { Header } from '@/components/shared/Header'
+import { ContentHeader } from '@/components/shared/ContentHeader'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -28,24 +29,27 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         className={`${inter.variable} ${baiJamjuree.variable} bg-dark-main font-sans text-light-main`}
       >
         {/* Container */}
-        <div className="relative max-h-screen">
+        <div className="relative max-h-screen lg:overflow-y-hidden">
           {/* Blur */}
           <div className="-left absolute -left-[263px] top-1/2 h-[288px] w-[526px] -translate-y-1/2 translate-x-0 rounded-full bg-dark-light opacity-50 blur-full" />
 
-          <Header />
-
           {/* Main */}
-          <main className="relative grid sm:grid-cols-1 md:min-h-screen md:grid-cols-2">
-            {/* Left */}
-            <div className="flex pt-32 md:pt-16">
-              <Hero />
-            </div>
+          <div className="relative md:min-h-screen">
+            <Header />
 
-            {/* Right */}
-            <div className="overflow-y-auto px-8 py-16 md:max-h-screen md:py-32 md:pr-32">
-              {children}
-            </div>
-          </main>
+            <main className="mx-auto grid grid-cols-1 px-4 lg:max-w-screen-xl lg:grid-cols-2 lg:px-0">
+              {/* Left */}
+              <div className="-mt-16 lg:h-full lg:overflow-hidden">
+                <Hero />
+              </div>
+
+              {/* Right */}
+              <div className="flex flex-col gap-8 pt-8 md:max-h-screen lg:overflow-y-auto">
+                <ContentHeader />
+                {children}
+              </div>
+            </main>
+          </div>
         </div>
       </body>
     </html>

@@ -6,14 +6,14 @@ import {
 } from '@/utils/icons/usabilities'
 
 import { ReactNode } from 'react'
-import { Button } from '../shared/Button'
 
 interface IMedia {
   url: string
   icon: ReactNode
 }
 
-const iconStyles = 'text-[20px] text-light-darker'
+const iconStyles =
+  'text-[20px] text-light-darker transition-colors group-hover:text-light-main'
 
 export function Medias() {
   const mediasList: IMedia[] = [
@@ -32,20 +32,20 @@ export function Medias() {
   ]
 
   return (
-    <div className="flex items-center gap-6">
+    <div className="flex items-center gap-4">
       <a href="">
-        <button className="flex items-center gap-1 rounded-md border border-primary-main px-3 py-1 leading-relaxed text-primary-main">
+        <button className="group flex items-center gap-1 rounded-full border border-primary-main bg-dark-main px-3 py-1 leading-relaxed text-primary-main transition-colors hover:bg-primary-main hover:text-dark-main">
           <span className="font-medium">Get in touch</span>
           <ArrowRightIcon className="text-sm" />
         </button>
       </a>
 
-      <Button />
-
-      <div className="flex gap-4">
+      <div className="flex gap-2">
         {mediasList.map((media) => (
           <a href="" className="" key={media.url}>
-            <button className="flex items-center">{media.icon}</button>
+            <button className="group flex items-center rounded-full p-2 transition-colors hover:bg-dark-light">
+              {media.icon}
+            </button>
           </a>
         ))}
       </div>
