@@ -1,10 +1,10 @@
+import { SectionTitle } from '../shared/SectionTitle'
+
 export function About() {
   return (
-    <section className="leading-relaxed text-light-dark">
-      <h2 className="mb-2 text-sm font-bold uppercase leading-tight text-primary-main">
-        About me
-      </h2>
-      <div className="space-y-4 ">
+    <section>
+      <SectionTitle content="About me" />
+      <div className="space-y-4 leading-relaxed text-light-dark">
         <p>
           Hello! My name is Gustavo and I enjoy creating things that live on the
           internet. My interest at web development started in 2020, after i got

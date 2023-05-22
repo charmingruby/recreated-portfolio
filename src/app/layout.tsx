@@ -1,8 +1,8 @@
-import { Hero } from '@/components/Hero'
+import { Hero } from '@/components/hero/Hero'
 import './globals.css'
 import { Bai_Jamjuree, Inter } from 'next/font/google'
 import { ReactNode } from 'react'
-import { Header } from '@/components/Header'
+import { Header } from '@/components/shared/Header'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -35,14 +35,14 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <Header />
 
           {/* Main */}
-          <main className="relative grid min-h-screen sm:grid-cols-1 md:grid-cols-2">
+          <main className="relative grid sm:grid-cols-1 md:min-h-screen md:grid-cols-2">
             {/* Left */}
-            <div className="flex  flex-1">
+            <div className="flex pt-32 md:pt-16">
               <Hero />
             </div>
 
             {/* Right */}
-            <div className="max-h-screen overflow-y-auto pr-32 pt-32">
+            <div className="overflow-y-auto px-8 py-16 md:max-h-screen md:py-32 md:pr-32">
               {children}
             </div>
           </main>
