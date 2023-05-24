@@ -1,4 +1,4 @@
-import { RolesTyping } from './RolesTyping'
+import { RolesTyping } from './roles-typing'
 
 export function Apresentation() {
   return (

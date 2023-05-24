@@ -1,7 +1,7 @@
-import { About } from '@/components/about/About'
-import { Contact } from '@/components/contact/Contact'
-import { Projects } from '@/components/projects/Projects'
-import { Skills } from '@/components/skills/Skills'
+import { About } from '@/components/sections/about'
+import { Contact } from '@/components/sections/contact'
+import { Projects } from '@/components/sections/projects'
+import { Skills } from '@/components/sections/skills'
 
 export default function Home() {
   return (

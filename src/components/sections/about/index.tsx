@@ -1,8 +1,8 @@
-import { SectionTitle } from '../shared/SectionTitle'
+import { SectionTitle } from '../../shared/section-title'
 
 export function About() {
   return (
-    <section>
+    <section className="space-y-4">
       <SectionTitle content="About me" />
       <div className="space-y-4 leading-relaxed text-light-dark">
         <p>

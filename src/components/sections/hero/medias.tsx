@@ -1,3 +1,4 @@
+import { Button } from '@/components/shared/button'
 import {
   LinkedinIcon,
   InstagramIcon,
@@ -33,12 +34,10 @@ export function Medias() {
 
   return (
     <div className="flex items-center gap-4">
-      <a href="">
-        <button className="group flex items-center gap-1 rounded-full border border-primary-main bg-dark-main px-3 py-1 leading-relaxed text-primary-main transition-colors hover:bg-primary-main hover:text-dark-main">
-          <span className="font-medium">Get in touch</span>
-          <ArrowRightIcon className="text-sm" />
-        </button>
-      </a>
+      <Button>
+        <span className="font-medium">Get in touch</span>
+        <ArrowRightIcon className="text-sm" />
+      </Button>
 
       <div className="flex gap-2">
         {mediasList.map((media) => (

@@ -1,9 +1,9 @@
-import { Hero } from '@/components/hero/Hero'
+import { Hero } from '@/components/sections/hero'
 import './globals.css'
 import { Bai_Jamjuree, Inter } from 'next/font/google'
 import { ReactNode } from 'react'
-import { Header } from '@/components/shared/Header'
-import { ContentHeader } from '@/components/shared/ContentHeader'
+import { Header } from '@/components/shared/header'
+import { LanguageSelection } from '@/components/shared/language-selection'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -29,23 +29,24 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         className={`${inter.variable} ${baiJamjuree.variable} bg-dark-main font-sans text-light-main`}
       >
         {/* Container */}
-        <div className="relative max-h-screen lg:overflow-y-hidden">
+        <div className="relative">
           {/* Blur */}
-          <div className="-left absolute -left-[263px] top-1/2 h-[288px] w-[526px] -translate-y-1/2 translate-x-0 rounded-full bg-dark-light opacity-50 blur-full" />
+          <div className="-left fixed -left-[263px] top-1/2 h-[288px] w-[526px] -translate-y-1/2 translate-x-0 rounded-full bg-dark-light opacity-50 blur-full" />
 
-          {/* Main */}
-          <div className="relative md:min-h-screen">
+          {/* Content */}
+          <div className="w-full">
             <Header />
 
-            <main className="mx-auto grid grid-cols-1 px-4 lg:max-w-screen-xl lg:grid-cols-2 lg:px-0">
+            {/* Main */}
+            <main className="mx-auto flex w-full max-w-screen-xl flex-col justify-between px-4 sm:px-8 lg:flex-row">
               {/* Left */}
-              <div className="-mt-16 lg:h-full lg:overflow-hidden">
+              <div className="-pt-16 w-full lg:h-full lg:max-h-screen lg:w-1/2 lg:pt-0">
                 <Hero />
               </div>
 
               {/* Right */}
-              <div className="flex flex-col gap-8 pt-8 md:max-h-screen lg:overflow-y-auto">
-                <ContentHeader />
+              <div className="flex w-full flex-col gap-8 pb-12 pt-24 lg:w-1/2 ">
+                <LanguageSelection />
                 {children}
               </div>
             </main>

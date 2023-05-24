@@ -1,14 +1,11 @@
 'use client'
 
+import { rolesList } from '@/data/roles'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 
 export function RolesTyping() {
   const [roles] = useTypewriter({
-    words: [
-      '<Full Stack Developer />',
-      '<Node Developer />',
-      '<React and React Native Developer />',
-    ],
+    words: rolesList,
     loop: true,
     delaySpeed: 2000,
   })
