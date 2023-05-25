@@ -1,11 +1,15 @@
 interface SectionTitleProps {
-  content: string
+  title: string
+  subtitle?: string
 }
 
-export function SectionTitle({ content }: SectionTitleProps) {
+export function SectionTitle({ subtitle, title }: SectionTitleProps) {
   return (
-    <h2 className="text-sm font-bold uppercase leading-tight text-primary-main">
-      {`./../${content}`}
-    </h2>
+    <div>
+      <h2 className="mb-1 text-sm font-bold uppercase leading-tight text-primary-main">
+        {`./../${title}`}
+      </h2>
+      {title && <h3 className="text-2xl font-medium">{subtitle}</h3>}
+    </div>
   )
 }

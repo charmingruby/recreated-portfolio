@@ -6,13 +6,13 @@ import {
   frontEndSkills,
   mobileSkills,
   stylingSkills,
-} from '@/data/skills'
-import { SkillsDisclosure } from './skills-disclosure'
+} from '@/utils/data/skillsList'
+import { SkillsDisclosure } from './disclosure'
 
 export function Skills() {
   return (
     <section className="space-y-4">
-      <SectionTitle content="Tooling" />
+      <SectionTitle title="Tooling" subtitle="Technologies that i work with" />
 
       {/* Main Stack */}
       <div className="flex w-full flex-col gap-1.5 rounded-md border border-dark-light p-2">

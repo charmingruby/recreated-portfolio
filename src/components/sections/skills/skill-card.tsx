@@ -1,5 +1,5 @@
-import { ISkill } from '@/data/skills'
-import { FilledCalendarIcon } from '@/utils/icons/usabilities'
+import { ISkill } from '@/utils/data/skillsList'
+import { FilledCalendarIcon } from '@/assets/icons/usabilities'
 
 interface SkillCardProps {
   skill: ISkill

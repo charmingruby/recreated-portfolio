@@ -3,7 +3,7 @@ import './globals.css'
 import { Bai_Jamjuree, Inter } from 'next/font/google'
 import { ReactNode } from 'react'
 import { Header } from '@/components/shared/header'
-import { LanguageSelection } from '@/components/shared/language-selection'
+import { Footer } from '@/components/shared/footer'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -31,7 +31,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         {/* Container */}
         <div className="relative">
           {/* Blur */}
-          <div className="-left fixed -left-[263px] top-1/2 h-[288px] w-[526px] -translate-y-1/2 translate-x-0 rounded-full bg-dark-light opacity-50 blur-full" />
+          <div className="-left fixed -left-[263px] top-1/2 -z-10 h-[288px] w-[526px] -translate-y-1/2 translate-x-0 rounded-full bg-dark-light opacity-50 blur-full" />
 
           {/* Content */}
           <div className="w-full">
@@ -45,9 +45,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               </div>
 
               {/* Right */}
-              <div className="flex w-full flex-col gap-8 pb-12 pt-24 lg:w-1/2 ">
-                <LanguageSelection />
+              <div className="flex w-full flex-col gap-8 pb-12 pt-16 lg:w-1/2 lg:pt-24">
                 {children}
+                <Footer />
               </div>
             </main>
           </div>

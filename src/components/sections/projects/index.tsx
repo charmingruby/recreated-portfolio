@@ -3,7 +3,7 @@ import { SectionTitle } from '../../shared/section-title'
 export function Projects() {
   return (
     <section className="space-y-4">
-      <SectionTitle content="What I've been working with" />
+      <SectionTitle title="What I've been working in" />
 
       <div>
         <span>projects</span>

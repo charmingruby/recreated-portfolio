@@ -3,7 +3,7 @@ import { SectionTitle } from '../../shared/section-title'
 export function About() {
   return (
     <section className="space-y-4">
-      <SectionTitle content="About me" />
+      <SectionTitle title="About me" subtitle="Apresentation of myself" />
       <div className="space-y-4 leading-relaxed text-light-dark">
         <p>
           Hello! My name is Gustavo and I enjoy creating things that live on the

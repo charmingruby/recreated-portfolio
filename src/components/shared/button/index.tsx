@@ -8,7 +8,7 @@ export function Button({ children, className, ...props }: ButtonProps) {
     <button
       {...props}
       className={cn(
-        'group flex items-center gap-1 rounded-full border border-primary-main bg-dark-main px-3 py-1 font-alt leading-relaxed text-primary-main transition-colors hover:bg-primary-main hover:text-dark-main',
+        'group flex items-center justify-center gap-1 rounded-full border border-primary-main bg-dark-main px-3 py-1 font-alt leading-relaxed text-primary-main transition-colors hover:bg-primary-main hover:text-dark-main',
         className,
       )}
     >

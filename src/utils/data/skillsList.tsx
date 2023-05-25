@@ -1,5 +1,5 @@
 import { ReactNode } from 'react'
-import * as Tecs from '../utils/icons/technologies'
+import * as Tecs from '../../assets/icons/technologies'
 
 export interface ISkill {
   name: string

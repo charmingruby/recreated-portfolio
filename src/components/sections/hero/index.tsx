@@ -6,7 +6,7 @@ import { Apresentation } from './apresentation'
 export function Hero() {
   return (
     <div className="mt-24 flex flex-col lg:fixed lg:mt-0 lg:h-full lg:justify-center">
-      <SectionTitle content="Hello, my name is" />
+      <SectionTitle title="Hello, my name is" />
       <Apresentation />
       <MainStack />
       <Medias />

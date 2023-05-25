@@ -1,6 +1,6 @@
 'use client'
 
-import { CaretIcon } from '@/utils/icons/usabilities'
+import { CaretIcon } from '@/assets/icons/usabilities'
 import { clsx } from 'clsx'
 
 interface DisclosureButtonProps {
