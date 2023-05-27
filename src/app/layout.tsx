@@ -3,7 +3,6 @@ import './globals.css'
 import { Bai_Jamjuree, Inter } from 'next/font/google'
 import { ReactNode } from 'react'
 import { Header } from '@/components/shared/header'
-import { Footer } from '@/components/shared/footer'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -45,9 +44,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               </div>
 
               {/* Right */}
-              <div className="flex w-full flex-col gap-8 pb-12 pt-16 lg:w-1/2 lg:pt-24">
+              <div className="w-full pb-12 pt-16 lg:w-1/2 lg:pt-24">
                 {children}
-                <Footer />
               </div>
             </main>
           </div>

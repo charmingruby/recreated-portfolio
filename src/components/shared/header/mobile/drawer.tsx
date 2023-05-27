@@ -12,9 +12,9 @@ export function MobileDrawer({ status }: MobileDrawerProps) {
   return (
     <div
       className={clsx(
-        'fixed z-[-99] mt-16 w-full border-b border-dark-lighten bg-dark-dark transition-transform lg:absolute lg:hidden',
+        'fixed z-[-99] mt-16 w-full border-b border-dark-lighten bg-dark-dark transition-transform md:hidden lg:absolute lg:hidden',
         {
-          '-translate-y-44': status,
+          '-translate-y-44': !status,
         },
       )}
     >

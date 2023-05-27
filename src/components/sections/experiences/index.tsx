@@ -1,11 +1,12 @@
 import { SectionTitle } from '@/components/shared/section-title'
+import { ExperienceCard } from './experience-card'
 
 export function Experiences() {
   return (
     <section className="space-y-4">
-      <SectionTitle title="working experience" />
+      <SectionTitle title="working experience" subtitle="Career" />
       <div>
-        <span>experiences</span>
+        <ExperienceCard />
       </div>
     </section>
   )

@@ -15,7 +15,7 @@ export function MobileHeader() {
 
   return (
     <>
-      <header className="mx-auto flex h-16 w-full items-center justify-between border-b border-dark-light bg-dark-main px-4 sm:px-8 lg:mx-auto lg:hidden lg:max-w-screen-xl">
+      <header className="mx-auto flex h-16 w-full items-center justify-between border-b border-dark-light bg-dark-main px-4 sm:px-8 md:hidden">
         <Image src={Logo} alt="Logo image" width={32} height={32} />
         <MenuButton onClick={handleMenuToggle} />
       </header>

@@ -7,7 +7,7 @@ import { Button } from '../../button'
 
 export function DesktopHeader() {
   return (
-    <header className="mx-auto hidden h-16 w-full items-center justify-between px-4 sm:px-8 lg:mx-auto lg:flex lg:max-w-screen-xl">
+    <header className="mx-auto hidden h-16 w-full items-center justify-between px-4 sm:px-8 md:mx-auto md:flex md:max-w-screen-xl">
       <Image src={Logo} alt="Logo image" width={32} height={32} />
 
       <nav>
