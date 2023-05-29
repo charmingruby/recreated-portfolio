@@ -4,7 +4,7 @@ export function Apresentation() {
   return (
     <div className="mb-4">
       <div className="mb-3">
-        <h1 className="m-0 font-alt text-5xl font-bold leading-tight">
+        <h1 className="text-3.5xl m-0 font-alt font-bold leading-tight md:text-5xl">
           Gustavo Dias
         </h1>
       </div>

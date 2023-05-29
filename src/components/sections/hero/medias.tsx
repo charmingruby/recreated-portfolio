@@ -1,14 +1,16 @@
 import { Button } from '@/components/shared/button'
-import { mediasList } from '@/utils/data/mediasList'
+import { mediasList } from '@/data/mediasList'
 import { ArrowRightIcon } from '@/assets/icons/usabilities'
 
 export function Medias() {
   return (
     <div className="flex flex-col items-center gap-4 md:flex-row">
-      <Button className="w-full">
-        <span className="font-medium">Get in touch</span>
-        <ArrowRightIcon className="text-sm" />
-      </Button>
+      <a className="w-full" href="#contact">
+        <Button className="w-full">
+          <span className="font-medium">Get in touch</span>
+          <ArrowRightIcon className="text-sm" />
+        </Button>
+      </a>
 
       <div className="flex justify-between gap-2">
         {mediasList.map((media) => (

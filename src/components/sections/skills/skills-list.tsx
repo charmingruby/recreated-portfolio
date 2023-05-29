@@ -1,4 +1,4 @@
-import { ISkill } from '@/utils/data/skillsList'
+import { ISkill } from '@/data/skillsList'
 import { SkillCard } from './skill-card'
 
 interface SkillsListProps {

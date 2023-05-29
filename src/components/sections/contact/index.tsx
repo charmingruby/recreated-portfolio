@@ -3,7 +3,7 @@ import { ContactForm } from './contact-form'
 
 export function Contact() {
   return (
-    <section className="space-y-4">
+    <section className="space-y-4" id="contact">
       <SectionTitle
         title="Connect with me"
         subtitle="Let's work together? Get  in touch  with me"

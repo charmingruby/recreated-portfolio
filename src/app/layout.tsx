@@ -23,7 +23,10 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className="scroll-smooth scrollbar-thin scrollbar-track-dark-lighten scrollbar-thumb-dark-dark"
+    >
       <body
         className={`${inter.variable} ${baiJamjuree.variable} bg-dark-main font-sans text-light-main`}
       >
