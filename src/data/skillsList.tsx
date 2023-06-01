@@ -49,6 +49,12 @@ export const backEndSkills: ISkill[] = [
     experienceTime: '2 months',
   },
   {
+    icon: <Tecs.VitestIcon />,
+    hex: '#729B1B',
+    name: 'Vitest',
+    experienceTime: '2 months',
+  },
+  {
     icon: <Tecs.JestIcon />,
     hex: '#853957',
     name: 'Jest',

@@ -8,9 +8,9 @@ export function MenuButton({ onClick }: MenuButtonProps) {
   return (
     <button
       onClick={onClick}
-      className="text-light-dark transition-colors active:text-primary-main"
+      className="text-light-main transition-colors active:text-primary-main"
     >
-      <MenuIcon size={28} />
+      <MenuIcon size={24} />
     </button>
   )
 }

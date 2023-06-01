@@ -1,4 +1,5 @@
 import {
+  SiVitest as VitestIcon,
   SiNodedotjs as NodeIcon,
   SiReact as ReactIcon,
   SiNextdotjs as NextIcon,
@@ -20,6 +21,7 @@ import {
   SiCss3 as CSSIcon,
 } from 'react-icons/si'
 export {
+  VitestIcon,
   CSSIcon,
   ExpoIcon,
   MongoIcon,

@@ -3,8 +3,10 @@ import { backEndSkills } from '@/data/skillsList'
 import { RedirectIcon, LinkIcon } from '@/assets/icons/usabilities'
 
 export function ExperienceCard() {
+  const handleTimestamp = () => {}
+
   return (
-    <div className="group flex cursor-pointer flex-col items-start gap-2 px-2 py-4 transition-colors hover:bg-dark-light sm:flex-row sm:px-4 sm:py-6 md:gap-4">
+    <div className="group flex cursor-pointer flex-col items-start gap-2 rounded-md px-2 py-4 transition-colors hover:bg-dark-light sm:flex-row sm:px-4 sm:py-6 md:gap-4">
       {/* Work time */}
       <div className="mt-1 flex items-center gap-1 font-alt text-sm uppercase text-light-darker">
         <p>JULY</p>

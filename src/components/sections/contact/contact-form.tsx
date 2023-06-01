@@ -29,7 +29,7 @@ export function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit(handleSendEmail)}
-      className="flex w-full flex-col gap-2 rounded-md"
+      className="flex w-full flex-col gap-4 rounded-md"
     >
       <div>
         <input
