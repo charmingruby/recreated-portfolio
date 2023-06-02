@@ -4,15 +4,53 @@ interface IExperienceProjects {
 }
 
 export interface IExperience {
-  role: string
+  company: string // UFJF
+  role: string // Backend Node
   level: string
-  description: string
+  description: string // lorem...
   technologies: string[]
   projects: IExperienceProjects[]
-  initalMonth: string
-  finalMonth: string
-  initialYear: number
-  finalYear: number
+  initialTime: string
+  finishTime: string
 }
 
-export const experiencesList: IExperience[] = []
+export const experiencesList: IExperience[] = [
+  {
+    company: 'Code Jr.',
+    level: 'Projects Assistant',
+    description: '',
+    role: 'Front End',
+    technologies: [
+      'javascript',
+      'typescript',
+      'react',
+      'php',
+      'html',
+      'css',
+      'mysql',
+    ],
+    projects: [],
+    initialTime: '2021',
+    finishTime: '2022',
+  },
+  {
+    company: 'UFJF',
+    level: 'Professional Training',
+    description: '',
+    role: 'Developer',
+    technologies: ['React Native', 'Node', 'UI/UX'],
+    projects: [],
+    initialTime: 'JAN',
+    finishTime: 'DEC 2022',
+  },
+  {
+    company: 'UFJF',
+    level: 'Professional Training',
+    description: '',
+    role: 'Developer',
+    technologies: ['java'],
+    projects: [],
+    initialTime: 'JAN',
+    finishTime: 'JUN 2023',
+  },
+]

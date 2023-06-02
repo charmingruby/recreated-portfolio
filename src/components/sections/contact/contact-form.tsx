@@ -33,7 +33,8 @@ export function ContactForm() {
     >
       <div>
         <input
-          className="w-full rounded-md border-2 border-dark-lighten bg-dark-light px-4 py-2 text-base placeholder:text-light-darker focus:border-primary-main focus:bg-dark-lighten focus:outline-none"
+          disabled
+          className="w-full cursor-not-allowed rounded-md border-2 border-dark-lighten bg-dark-light px-4 py-2 text-base placeholder:text-light-darker focus:border-primary-main focus:bg-dark-lighten focus:outline-none"
           placeholder="Email"
           type="email"
           {...register('email')}
@@ -43,7 +44,8 @@ export function ContactForm() {
 
       <div>
         <input
-          className="w-full rounded-md border-2 border-dark-lighten bg-dark-light px-4 py-2 text-base placeholder:text-light-darker focus:outline-none"
+          disabled
+          className="w-full cursor-not-allowed rounded-md border-2 border-dark-lighten bg-dark-light px-4 py-2 text-base placeholder:text-light-darker focus:outline-none"
           placeholder="Subject"
           type="text"
           {...register('subject')}
@@ -53,7 +55,8 @@ export function ContactForm() {
 
       <div>
         <textarea
-          className="h-28 w-full resize-none rounded-md border-2 border-dark-lighten bg-dark-light px-4 py-3 text-base placeholder:text-light-darker focus:outline-none"
+          disabled
+          className="h-28 w-full cursor-not-allowed resize-none rounded-md border-2 border-dark-lighten bg-dark-light px-4 py-3 text-base placeholder:text-light-darker focus:outline-none"
           placeholder="Message"
           maxLength={500}
           {...register('message')}
