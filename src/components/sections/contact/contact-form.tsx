@@ -4,11 +4,23 @@ import { z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { Button } from '@/components/shared/button'
 import { useForm } from 'react-hook-form'
+import { FormFieldErrorMessage } from './form-field-error-message'
 
 const sendEmailFormSchema = z.object({
-  email: z.string().email().nonempty('E-mail is required'),
-  subject: z.string().min(8).max(48).nonempty('Subject is required'),
-  message: z.string().min(10).max(500).nonempty('Message is required'),
+  email: z
+    .string()
+    .email('Invalid e-mail format.')
+    .nonempty('E-mail is required.'),
+  subject: z
+    .string()
+    .min(8, 'Subject must have at least 8 characters.')
+    .max(48, 'Subject must be a maximum of 48 characters.')
+    .nonempty('Subject is required.'),
+  message: z
+    .string()
+    .min(10, 'Message must have at least 10 characters.')
+    .max(500, 'Message must be a maximum of 500 characters.')
+    .nonempty('Message is required.'),
 })
 
 type SendEmailFormData = z.infer<typeof sendEmailFormSchema>
@@ -18,7 +30,7 @@ export function ContactForm() {
     handleSubmit,
     register,
     formState: { errors },
-  } = useForm({
+  } = useForm<SendEmailFormData>({
     resolver: zodResolver(sendEmailFormSchema),
   })
 
@@ -26,42 +38,63 @@ export function ContactForm() {
     console.log(data)
   }
 
+  console.log(errors)
+
   return (
     <form
       onSubmit={handleSubmit(handleSendEmail)}
       className="flex w-full flex-col gap-4 rounded-md"
     >
-      <div>
+      <div className="space-y-2">
         <input
-          disabled
-          className="w-full cursor-not-allowed rounded-md border-2 border-dark-lighten bg-dark-light px-4 py-2 text-base placeholder:text-light-darker focus:border-primary-main focus:bg-dark-lighten focus:outline-none"
+          className={`
+          ${
+            errors.email
+              ? 'border-red-500 focus:border-red-500'
+              : 'focus:border-primary-main'
+          }          w-full rounded-md border-2 border-dark-lighten bg-dark-light px-4 py-2 text-base placeholder:text-light-darker focus:bg-dark-lighten focus:outline-none`}
           placeholder="Email"
-          type="email"
           {...register('email')}
         />
-        {errors.email && <span>{errors.email.message}</span>}
+        {errors.email && (
+          <FormFieldErrorMessage message={errors.email?.message} />
+        )}
       </div>
 
-      <div>
+      <div className="space-y-2">
         <input
-          disabled
-          className="w-full cursor-not-allowed rounded-md border-2 border-dark-lighten bg-dark-light px-4 py-2 text-base placeholder:text-light-darker focus:outline-none"
+          className={`
+          ${
+            errors.subject
+              ? 'border-red-500 focus:border-red-500'
+              : 'focus:border-primary-main'
+          }
+          w-full rounded-md border-2 border-dark-lighten bg-dark-light px-4 py-2 text-base placeholder:text-light-darker focus:bg-dark-lighten focus:outline-none`}
           placeholder="Subject"
           type="text"
           {...register('subject')}
         />
-        {errors.email && <span>{errors.subject.message}</span>}
+        {errors.subject && (
+          <FormFieldErrorMessage message={errors.subject?.message} />
+        )}
       </div>
 
-      <div>
+      <div className="space-y-2">
         <textarea
-          disabled
-          className="h-28 w-full cursor-not-allowed resize-none rounded-md border-2 border-dark-lighten bg-dark-light px-4 py-3 text-base placeholder:text-light-darker focus:outline-none"
+          className={`
+          ${
+            errors.message
+              ? 'border-red-500 focus:border-red-500'
+              : 'focus:border-primary-main'
+          }          
+          h-28 w-full resize-none rounded-md border-2 border-dark-lighten bg-dark-light px-4 py-3 text-base placeholder:text-light-darker focus:bg-dark-lighten focus:outline-none
+          `}
           placeholder="Message"
-          maxLength={500}
           {...register('message')}
         />
-        {errors.email && <span>{errors.message.message}</span>}
+        {errors.message && (
+          <FormFieldErrorMessage message={errors.message?.message} />
+        )}
       </div>
 
       <div className="flex w-full justify-end">

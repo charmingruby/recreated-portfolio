@@ -18,7 +18,7 @@ export const experiencesList: IExperience[] = [
   {
     company: 'Code Jr.',
     level: 'Projects Assistant',
-    description: '',
+    description: `Developed an E-commerce, and maintained customer's websites.`,
     role: 'Front End',
     technologies: [
       'javascript',
@@ -36,7 +36,8 @@ export const experiencesList: IExperience[] = [
   {
     company: 'UFJF',
     level: 'Professional Training',
-    description: '',
+    description:
+      'Developed a teleconsultation application for remote medical care of patients with no financial conditions.',
     role: 'Developer',
     technologies: ['React Native', 'Node', 'UI/UX'],
     projects: [],
@@ -46,7 +47,7 @@ export const experiencesList: IExperience[] = [
   {
     company: 'UFJF',
     level: 'Professional Training',
-    description: '',
+    description: `Developed a project that analyzes developer's skills by the commits on Github.`,
     role: 'Developer',
     technologies: ['java'],
     projects: [],

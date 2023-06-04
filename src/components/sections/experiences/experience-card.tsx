@@ -15,7 +15,7 @@ export function ExperienceCard({ experience }: ExperienceCardProps) {
         <div className="h-[2px] w-2 bg-light-darker transition-colors group-hover:bg-light-main" />
         <p className="sm:w-24">{experience.finishTime}</p>
       </div>
-      <div className="flex flex-col gap-2 rounded-md px-2 py-6 transition-colors group-hover:bg-dark-light sm:px-4">
+      <div className="flex w-full flex-col rounded-md px-2 py-6 transition-colors group-hover:bg-dark-light sm:px-4">
         {/* Title */}
         <div className="flex flex-col text-xl font-medium text-light-main transition-colors group-hover:text-primary-main sm:flex-row sm:items-center sm:gap-1.5">
           <span className="leading-tight sm:leading-normal">
@@ -23,18 +23,20 @@ export function ExperienceCard({ experience }: ExperienceCardProps) {
           </span>
           <span className="hidden sm:flex">·</span>
           <span className="text-lg leading-tight text-light-dark transition-colors group-hover:text-primary-main sm:leading-normal sm:text-light-main">
-            {experience.level}
+            {experience.company}
           </span>
           <RedirectIcon className="hidden transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 sm:flex" />
         </div>
 
+        {/* Role */}
+        <div className="mb-4 mt-0.5">
+          <span className="text-light-dark">{experience.level}</span>
+        </div>
+
         {/* Description */}
-        <div>
+        <div className="mb-2">
           <p className="leading-relaxed text-light-dark">
-            minus quibusdam eaque ipsum excepturi, voluptatibus nihil quas
-            obcaecati quos et reprehenderit quia tempora iusto quisquam maiores
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
-            inventore perferendis blanditiis dignissimos.
+            {experience.description}
           </p>
         </div>
 

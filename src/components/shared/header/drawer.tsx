@@ -1,5 +1,3 @@
-'use client'
-
 import { navigationList } from '@/data/navigationList'
 import { DrawerItem } from './drawer-item'
 import { clsx } from 'clsx'

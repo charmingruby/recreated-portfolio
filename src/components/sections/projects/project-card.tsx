@@ -34,10 +34,12 @@ export function ProjectCard({ project }: ProjectCardProps) {
         </ul>
 
         <div className="flex items-center text-primary-main">
-          <span className="flex items-center gap-1 rounded-full">
-            View details
-            <ArrowRightIcon />
-          </span>
+          <a href={project.repoUrl}>
+            <span className="flex items-center gap-1 rounded-full transition-colors hover:text-primary-light">
+              View repository
+              <ArrowRightIcon className="transition-transform group-hover:translate-x-1" />
+            </span>
+          </a>
         </div>
       </div>
     </div>
