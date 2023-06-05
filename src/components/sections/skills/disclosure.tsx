@@ -3,7 +3,7 @@
 import { Disclosure } from '@headlessui/react'
 import { DisclosureButton } from './disclosure-button'
 import { SkillsList } from './skills-list'
-import { ISkill } from '@/utils/data/skillsList'
+import { ISkill } from '@/data/skillsList'
 
 interface SkillsDisclosureProps {
   categoryName: string
