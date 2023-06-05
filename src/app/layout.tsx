@@ -51,7 +51,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               </div>
 
               {/* Right */}
-              <div className="w-full space-y-8 pb-12 pt-16 lg:w-1/2 lg:pt-24">
+              <div className="w-full space-y-12 pb-12 pt-16 lg:w-1/2 lg:pt-24">
                 {children}
                 <Footer />
               </div>

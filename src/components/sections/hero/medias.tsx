@@ -1,26 +1,30 @@
+'use client'
+
 import { Button } from '@/components/shared/button'
-import { mediasList } from '@/data/mediasList'
-import { ArrowRightIcon } from '@/assets/icons/usabilities'
+import { AltGithubIcon, ArrowRightIcon } from '@/assets/icons/usabilities'
+import Link from 'next/link'
 
 export function Medias() {
   return (
     <div className="flex flex-col items-center gap-4 md:flex-row">
-      <a className="w-full" href="#contact">
+      <Link
+        className="w-full"
+        target="blank"
+        href="https://www.linkedin.com/in/gustavo-dias21/"
+      >
         <Button className="w-full">
           <span className="font-medium">Get in touch</span>
           <ArrowRightIcon className="text-sm" />
         </Button>
-      </a>
+      </Link>
 
-      <div className="flex justify-between gap-2">
-        {mediasList.map((media) => (
-          <a href="" className="" key={media.url}>
-            <button className="group flex items-center rounded-full p-2 text-lg transition-colors hover:bg-dark-light">
-              {media.icon}
-            </button>
-          </a>
-        ))}
-      </div>
+      <a
+        href="https://github.com/charmingruby"
+        target="blank"
+        className="flex h-full w-10 cursor-pointer items-center justify-center rounded bg-primary-main text-dark-main transition-colors hover:bg-primary-light"
+      >
+        <AltGithubIcon size={20} />
+      </a>
     </div>
   )
 }

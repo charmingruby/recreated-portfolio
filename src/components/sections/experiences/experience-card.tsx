@@ -49,7 +49,7 @@ export function ExperienceCard({ experience }: ExperienceCardProps) {
                 key={project.url}
               >
                 <LinkIcon />
-                <span>Sloteam API</span>
+                <span>{project.name}</span>
               </div>
             ))}
           </div>

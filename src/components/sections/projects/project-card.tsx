@@ -34,7 +34,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
         </ul>
 
         <div className="flex items-center text-primary-main">
-          <a href={project.repoUrl}>
+          <a target="blank" href={project.repoUrl}>
             <span className="flex items-center gap-1 rounded-full transition-colors hover:text-primary-light">
               View repository
               <ArrowRightIcon className="transition-transform group-hover:translate-x-1" />

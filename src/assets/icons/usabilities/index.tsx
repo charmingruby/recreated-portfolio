@@ -18,8 +18,10 @@ import { HiArrowNarrowRight as ArrowRightIcon } from 'react-icons/hi'
 import { RxCaretUp as CaretIcon } from 'react-icons/rx'
 import { BiUser as UserIcon, BiLockAlt as LockIcon } from 'react-icons/bi'
 import { CgMenuRight as MenuIcon } from 'react-icons/cg'
+import { VscGithubAlt as AltGithubIcon } from 'react-icons/vsc'
 
 export {
+  AltGithubIcon,
   RedirectIcon,
   LinkIcon,
   OpenFolderIcon,
