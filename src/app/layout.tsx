@@ -4,6 +4,7 @@ import { Bai_Jamjuree, Inter } from 'next/font/google'
 import { ReactNode } from 'react'
 import { Header } from '@/components/shared/header'
 import { Footer } from '@/components/shared/footer'
+import { Toaster } from 'react-hot-toast'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -33,6 +34,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       >
         {/* Container */}
         <div className="relative">
+          <Toaster position="bottom-right" />
+
           {/* Blur */}
           <div className="-left fixed -left-[263px] top-1/2 -z-10 h-[288px] w-[526px] -translate-y-1/2 translate-x-0 rounded-full bg-dark-light opacity-50 blur-full" />
 

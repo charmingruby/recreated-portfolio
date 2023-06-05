@@ -5,6 +5,7 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { Button } from '@/components/shared/button'
 import { useForm } from 'react-hook-form'
 import { FormFieldErrorMessage } from './form-field-error-message'
+import { toast } from 'react-hot-toast'
 
 const sendEmailFormSchema = z.object({
   email: z
@@ -34,11 +35,14 @@ export function ContactForm() {
     resolver: zodResolver(sendEmailFormSchema),
   })
 
-  const handleSendEmail = (data: SendEmailFormData) => {
-    console.log(data)
+  const handleSendEmail = async (data: SendEmailFormData) => {
+    toast('E-mail sent successfully!', {
+      style: {
+        background: '#4CAF50',
+        color: '#fff',
+      },
+    })
   }
-
-  console.log(errors)
 
   return (
     <form
