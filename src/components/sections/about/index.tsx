@@ -6,22 +6,36 @@ export function About() {
       <SectionTitle title="About me" subtitle="Apresentation of myself" />
       <div className="space-y-4 leading-relaxed text-light-dark">
         <p>
-          Hello! My name is Gustavo and I enjoy creating things that live on the
-          internet. My interest at web development started in 2020, after i got
-          to the university where i got to a Junior Company, my first contact
-          with Software Development.
+          Hello! My name is Gustavo, and I am passionate about crafting dynamic
+          experiences. My journey into web development began in 2020 when I
+          started at{' '}
+          <span className="font-semibold text-light-main">
+            Computer Science
+          </span>{' '}
+          university at Federal University of Juiz de Fora(UFJF) and had the
+          opportunity to join a Junior Company, my first foray into the world of
+          software development.
         </p>
         <p>
-          Memorable moment was when i got passionated at programming: building
-          an E-Commerce with no knowledge. I had to rush to learn HTML/CSS for
-          the interfaces, PHP with MySQL to the backend. Hard and stresseful?
-          Yes. But, rewarding and amazing.
+          One particular moment stands out as a pivotal turning point in my
+          programming journey: building an{' '}
+          <span className="font-semibold text-light-main">
+            E-Commerce website from scratch{' '}
+          </span>
+          , despite having no prior knowledge. This endeavor compelled me to
+          swiftly acquire skills in HTML/CSS for frontend interfaces and PHP
+          with MySQL for backend functionality. Although it was a challenging
+          and occasionally stressful undertaking, the sense of reward and
+          fulfillment I experienced was unparalleled.
         </p>
         <p>
-          Fast-forward to today, I{"'"}ve been studying the environment of
-          JavaScript since 2021. At the beginning I was fascinated and focused
-          with front end but, today, I{"'"}m looking to learn of each part of
-          the development.
+          Since then, I have been immersing myself in the realm of{' '}
+          <span className="font-semibold text-light-main">JavaScript</span>{' '}
+          since 2021. While initially captivated by frontend development, I have
+          since broadened my horizons and aspire to gain proficiency in every
+          facet of the development process. My continuous dedication to learning
+          and mastering various aspects of web development fuels my growth and
+          fuels my enthusiasm for this ever-evolving field
         </p>
       </div>
     </section>

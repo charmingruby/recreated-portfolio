@@ -21,7 +21,7 @@ export function Medias() {
       <a
         href="https://github.com/charmingruby"
         target="blank"
-        className="flex h-full w-10 cursor-pointer items-center justify-center rounded bg-primary-main text-dark-main transition-colors hover:bg-primary-light"
+        className="flex h-full w-10 cursor-pointer items-center justify-center rounded-full border border-primary-main text-primary-main transition-colors hover:bg-primary-light hover:text-dark-main"
       >
         <AltGithubIcon size={20} />
       </a>
