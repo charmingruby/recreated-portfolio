@@ -1,7 +1,5 @@
-'use client'
-
 import { Button } from '@/components/shared/button'
-import { AltGithubIcon, ArrowRightIcon } from '@/assets/icons/usabilities'
+import { AltGithubIcon } from '@/assets/icons/usabilities'
 import Link from 'next/link'
 
 export function Medias() {
@@ -14,14 +12,13 @@ export function Medias() {
       >
         <Button className="w-full">
           <span className="font-medium">Get in touch</span>
-          <ArrowRightIcon className="text-sm" />
         </Button>
       </Link>
 
       <a
         href="https://github.com/charmingruby"
         target="blank"
-        className="flex h-full w-10 cursor-pointer items-center justify-center rounded-full border border-primary-main text-primary-main transition-colors hover:bg-primary-light hover:text-dark-main"
+        className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border border-primary-main text-primary-main transition-colors hover:bg-primary-light hover:text-dark-main md:w-11"
       >
         <AltGithubIcon size={20} />
       </a>
