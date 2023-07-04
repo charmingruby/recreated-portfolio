@@ -49,9 +49,89 @@ export const projectsList: IProject[] = [
     repoUrl: 'https://github.com/charmingruby/recreated-portfolio.git',
     demoUrl: '',
   },
-]
+  {
+    title: 'Ymir App (Under development)',
+    description: [
+      'Software development assistent application to help the organization and development of system.',
+    ],
+    technologies: [
+      'Next',
+      'TailwindCSS',
+      'Redux Zustand',
+      'HeadlessUI',
+      'Zod',
+      'React-Hook-Form',
+      'Node',
+      'Prisma',
+      'Fastify',
+      'PostgreSQL',
+      'Vitest',
+      'JWT',
+    ],
+    repoUrl: 'https://github.com/charmingruby/ymir',
+    demoUrl: '',
+  },
+  {
+    title: 'Toss a Coin API',
+    description: ['Transactions management API'],
+    technologies: ['Node', 'Vitest', 'Knex', 'SQLite', 'Zod', 'Fastify'],
+    repoUrl: 'https://github.com/charmingruby/toss-a-coin-api',
+    demoUrl: '',
+  },
+  {
+    title: 'NLW Spacetime',
+    description: ['Time Capsule app.'],
+    technologies: [
+      'Next',
+      'TailwindCSS',
+      'Prisma',
+      'Node',
+      'Fastify',
+      'PostgreSQL',
+      'Expo',
+    ],
+    repoUrl: 'https://github.com/charmingruby/nlw-spacetime',
+    demoUrl: '',
+  },
+  {
+    title: 'Ignite Design System',
+    description: ['Design System made for a RocketSeat project.'],
+    technologies: ['React', 'Stitches', 'Storybook'],
+    repoUrl: 'https://github.com/charmingruby/ignite-design-system',
+    demoUrl: '',
+  },
 
+  {
+    title: 'Ignite Teams',
+    description: ['Mobile app made for teams disputes management'],
+    technologies: ['React Native', 'Styled Components', 'Async Storage'],
+    repoUrl: 'https://github.com/charmingruby/ignite-teams',
+    demoUrl: '',
+  },
+  {
+    title: 'Pomo on Nite',
+    description: ['Pomodoro app.'],
+    technologies: ['React', 'React-Hook-Form', 'Zod', 'Styled Components'],
+    repoUrl: 'https://github.com/charmingruby/pomo-on-nite',
+    demoUrl: '',
+  },
+  {
+    title: 'Goney Money',
+    description: ['Finances dashboard looking for API consume performance'],
+    technologies: ['React', 'Styled Components'],
+    repoUrl: 'https://github.com/charmingruby/goney-money',
+    demoUrl: '',
+  },
+  {
+    title: 'Marketify',
+    description: ['Accessories shop'],
+    technologies: ['Next', 'TailwindCSS', 'Stripes'],
+    repoUrl: 'https://github.com/charmingruby/marketify',
+    demoUrl: '',
+  },
+]
 /*
+
     {
         title: '',
         description: [],

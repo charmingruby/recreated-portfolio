@@ -19,8 +19,10 @@ import {
   SiAmazonaws as AwsIcon,
   SiExpo as ExpoIcon,
   SiCss3 as CSSIcon,
+  SiElixir as ElixirIcon,
 } from 'react-icons/si'
 export {
+  ElixirIcon,
   VitestIcon,
   CSSIcon,
   ExpoIcon,
