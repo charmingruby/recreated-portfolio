@@ -20,8 +20,12 @@ import {
   SiExpo as ExpoIcon,
   SiCss3 as CSSIcon,
   SiElixir as ElixirIcon,
+  SiGraphql as GraphQLIcon,
 } from 'react-icons/si'
+import { FaPhoenixFramework as PhoenixIcon } from 'react-icons/fa'
 export {
+  GraphQLIcon,
+  PhoenixIcon,
   ElixirIcon,
   VitestIcon,
   CSSIcon,
