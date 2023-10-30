@@ -1,4 +1,4 @@
-import { SectionTitle } from '../../shared/section-title'
+import { SectionTitle } from '../../section-title'
 
 export function About() {
   return (

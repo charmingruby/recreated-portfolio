@@ -1,4 +1,4 @@
-import { Button } from '@/components/shared/button'
+import { Button } from '@/components/ui/button'
 import { AltGithubIcon } from '@/assets/icons/usabilities'
 import Link from 'next/link'
 

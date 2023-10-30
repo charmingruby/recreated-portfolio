@@ -1,4 +1,4 @@
-import { SectionTitle } from '../../shared/section-title'
+import { SectionTitle } from '../../section-title'
 import {
   backEndSkills,
   cloudSkills,

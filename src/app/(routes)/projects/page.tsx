@@ -1,6 +1,6 @@
 import { CaretIcon } from '@/assets/icons/usabilities'
 import { ProjectCard } from '@/components/sections/projects/project-card'
-import { SectionTitle } from '@/components/shared/section-title'
+import { SectionTitle } from '@/components/section-title'
 import { projectsList } from '@/data/projectsList'
 import Link from 'next/link'
 

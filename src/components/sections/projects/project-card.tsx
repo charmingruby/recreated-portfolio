@@ -1,5 +1,5 @@
 import { FolderIcon, ArrowRightIcon } from '@/assets/icons/usabilities'
-import { TechBadge } from '@/components/shared/tech-badge'
+import { TechBadge } from '@/components/tech-badge'
 import { IProject } from '@/data/projectsList'
 
 interface ProjectCardProps {

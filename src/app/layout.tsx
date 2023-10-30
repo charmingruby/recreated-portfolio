@@ -1,10 +1,10 @@
 import { Hero } from '@/components/sections/hero'
-import './globals.css'
-import { Bai_Jamjuree, Inter } from 'next/font/google'
+import '../styles/globals.css'
 import { ReactNode } from 'react'
-import { Header } from '@/components/shared/header'
-import { Footer } from '@/components/shared/footer'
-import { Toaster } from 'react-hot-toast'
+import { Header } from '@/app/(routes)/components/header'
+import { Footer } from '@/app/(routes)/components/footer'
+import { Inter, Bai_Jamjuree } from '@next/font/google'
+import { DrawerContextProvider } from '@/contexts/drawer-context'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -29,13 +29,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       lang="en"
       className="scroll-smooth scrollbar-thin scrollbar-track-dark-lighten scrollbar-thumb-dark-dark"
     >
+      <DrawerContextProvider>
       <body
         className={`${inter.variable} ${baiJamjuree.variable} bg-dark-main font-sans text-light-main`}
       >
         {/* Container */}
         <div className="relative">
-          <Toaster position="bottom-right" />
-
           {/* Blur */}
           <div className="-left fixed -left-[263px] top-1/2 -z-10 h-[288px] w-[526px] -translate-y-1/2 translate-x-0 rounded-full bg-dark-light opacity-50 blur-full" />
 
@@ -44,9 +43,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             <Header />
 
             {/* Main */}
-            <main className="mx-auto flex w-full max-w-screen-xl flex-col justify-between px-4 sm:px-8 lg:flex-row">
+            <main className="mx-auto flex w-full max-w-screen-xl flex-col justify-between gap-12 px-4 sm:px-8 lg:flex-row">
               {/* Left */}
-              <div className="-pt-16 w-full lg:h-full lg:max-h-screen lg:w-1/2 lg:pt-0">
+              <div className="-pt-16 mx-auto flex w-full justify-center lg:h-full lg:max-h-screen lg:w-1/2 lg:pt-0">
                 <Hero />
               </div>
 
@@ -59,6 +58,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           </div>
         </div>
       </body>
+      </DrawerContextProvider>
     </html>
   )
 }

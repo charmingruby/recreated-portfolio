@@ -1,4 +1,4 @@
-import { TechBadge } from '../../shared/tech-badge'
+import { TechBadge } from '@/components/tech-badge'
 
 export function MainStack() {
   const technologies = ['Next', 'React', 'Node', 'TypeScript']

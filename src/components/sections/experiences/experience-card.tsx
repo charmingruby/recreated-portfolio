@@ -1,4 +1,4 @@
-import { TechBadge } from '@/components/shared/tech-badge'
+import { TechBadge } from '@/components/tech-badge'
 import { RedirectIcon, LinkIcon } from '@/assets/icons/usabilities'
 import { IExperience } from '@/data/experiencesList'
 

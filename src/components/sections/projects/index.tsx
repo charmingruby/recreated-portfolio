@@ -1,5 +1,5 @@
-import { Button } from '@/components/shared/button'
-import { SectionTitle } from '../../shared/section-title'
+import { Button } from '@/components/ui/button'
+import { SectionTitle } from '../../section-title'
 import { ArrowRightIcon } from '@/assets/icons/usabilities'
 import Link from 'next/link'
 import { ProjectsList } from './projects-list'

@@ -1,7 +1,7 @@
-import { SectionTitle } from '@/components/shared/section-title'
+import { SectionTitle } from '@/components/section-title'
 import { ExperiencesList } from './experiences-list'
 import { ArrowRightIcon } from '@/assets/icons/usabilities'
-import { Button } from '@/components/shared/button'
+import { Button } from '@/components/ui/button'
 
 export function Experiences() {
   return (
